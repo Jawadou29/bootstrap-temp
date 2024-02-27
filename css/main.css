@@ -1,0 +1,164 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --gold-color: #ffc400;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+}
+.btn:hover{
+    background-color: var(--red-color) !important;
+    color: var(--gold-color) !important;
+}
+ul{
+    list-style: none;
+}
+.main-btn:hover{
+    /* background-color: var(--red-color) !important; */
+    /* color: var(--gold-color) !important; */
+    background-color: black;
+}
+.bg-main{
+    background-color: var(--dark-color);
+}
+.bg-red{
+    background-color: var(--red-color);
+}
+.text-gold{
+    color: var(--gold-color);
+}
+/* start navbar */
+.navbar .navbar-nav a.active,
+.navbar .navbar-nav a.active:focus,
+.navbar .navbar-nav a:hover,
+.green-color{
+    color: var(--green-color) !important;
+}
+.navbar .search{
+    border-left:  2px solid var(--green-color);
+}
+/* end navbar */
+/* start landing */
+.landing{
+    height: calc(100vh - 70px);
+}
+/* end landing */
+/* start services */
+.services .main-title p::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.services .row .box i{
+    font-size: 60px;
+}
+.services .box .icon-holder{
+    height: 200px;
+}
+.services .box .icon-holder i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .box .icon-holder i:first-child{
+    font-size: 200px;
+    color: #33d1cc2c;
+    z-index: -1;
+}
+/* end services */
+/* start portfolio */
+.portfolio{
+    background-color: var(--section-color);
+}
+.portfolio ul li.active{
+    background-color: var(--red-color);
+    color: var(--gold-color);
+}
+.portfolio .box{
+    position: relative;
+}
+.portfolio .box::after{
+    content: attr(data-work);
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #ffc400a0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    z-index: 223;
+    /* transform: scale(1, 1); */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.portfolio .box:hover::after{
+    /* transform: scale(3); */
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+}
+/* end portfolio */
+/* start about  */
+.about .description{
+    max-width: 500px;
+}
+/* end about */
+/* strat team */
+.team{
+    background-color: var(--section-color);
+}
+.team .name{
+    background-color: var(--red-color);
+    color: white;
+}
+/* end team */
+/* start newsletter */
+.newletter{
+    background-color: var(--gold-color);
+}
+.newletter input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.newletter input::placeholder{
+    text-transform: capitalize;
+    color: white;
+}
+/* end newsletter */
+/* start footer */
+.footer .social i{
+    width: 30px;
+    height: 30px;
+}
+.footer .social i:nth-child(1){
+    background-color: #3b5998;
+}
+.footer .social i:nth-child(2){
+    background-color: #00acee;
+}
+.footer .social i:nth-child(3){
+    background-color: #0072b1;
+}
+.footer .social i:nth-child(4){
+    background-color: #e62117;
+}
+/* end footer */
